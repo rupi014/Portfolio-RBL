@@ -14,7 +14,7 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: number | string;
   blur?: string;
 }
 const BlurFade = ({
@@ -25,12 +25,12 @@ const BlurFade = ({
   delay = 0,
   yOffset = 6,
   inView = false,
-  inViewMargin = "-50px",
+  inViewMargin = "-50%",
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
   const [isMounted, setIsMounted] = useState(false);
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+  const inViewResult = useInView(ref, { once: true, margin: inViewMargin as any });
   
   useEffect(() => {
     setIsMounted(true);
