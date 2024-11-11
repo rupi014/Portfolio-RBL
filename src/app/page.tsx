@@ -172,6 +172,15 @@ export default function Page() {
                   correo electrónico
                 </Link>
                 {" "}
+                o por mensaje directo en mi
+                {" "}
+                <Link
+                  href={`https://x.com/rupidev`}
+                  className="text-blue-500 hover:underline"
+                >
+                  Twitter 
+                </Link>
+                {" "}
                 y te responderé lo antes posible.
               </p>
             </div>
