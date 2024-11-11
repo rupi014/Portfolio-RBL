@@ -168,6 +168,7 @@ export default function Page() {
                 <Link
                   href={`mailto:${DATA.contact.email}`}
                   className="text-blue-500 hover:underline"
+                  target="_blank" 
                 >
                   correo electrónico
                 </Link>
@@ -177,6 +178,7 @@ export default function Page() {
                 <Link
                   href={`https://x.com/rupidev`}
                   className="text-blue-500 hover:underline"
+                  target="_blank"
                 >
                   Twitter 
                 </Link>
