@@ -164,7 +164,7 @@ export const DATA = {
     {
       title: "API de gestión de Vikings",
       href: "https://vikingsapi.netlify.app/",
-      dates: "June 2023 - Present",
+      dates: "Sep 2024 - Oct 2024",
       active: true,
       description:
         "API creada con FastAPI que permite la gestión de datos en una base de datos MySQL. A través de esta aplicación, se pueden realizar diversas operaciones de administración de pedidos, staff, usuarios, productos, etc.",
