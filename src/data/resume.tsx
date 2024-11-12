@@ -191,7 +191,36 @@ export const DATA = {
       ],
       image: "/api.png",
       video: "",
-    }
+    },
+    {
+      title: "PokeCheck",
+      href: "https://pokecheck-rbl.netlify.app/",
+      dates: "Nov 2024",
+      active: true,
+      description:
+        "Aplicación web sencilla que facilita la gestión de una lista de Pokémon para marcarlos como capturados. Utiliza la API de PokeAPI para obtener los datos de los Pokémon.",
+      technologies: [
+        "HTML",
+        "SCSS",
+        "JavaScript",
+        "React",
+        "Rest API",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://pokecheck-rbl.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/rupi014/pokecheck",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/pokecheck.png",
+      video: "",
+    },
   ],
   hackathons: [
     {
