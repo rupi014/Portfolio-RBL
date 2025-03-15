@@ -95,6 +95,14 @@ export const DATA = {
   ],
   education: [
     {
+      school: "BBK Bootcamp - Ciberseguridad",
+      href: "https://bbkbootcamps.thebridge.tech/ciberseguridad",
+      degree: "Certificado Junior en Ciberseguridad",
+      logoUrl: "/bbk.svg",
+      start: "Mar 2025",
+      end: "Actualidad",
+    },
+    {
       school: "Bottega University",
       href: "https://bottega.edu/",
       degree: "Full Stack Development Certificate",
