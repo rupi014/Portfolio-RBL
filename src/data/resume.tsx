@@ -98,7 +98,7 @@ export const DATA = {
       school: "BBK Bootcamp - Ciberseguridad",
       href: "https://bbkbootcamps.thebridge.tech/ciberseguridad",
       degree: "Certificado Junior en Ciberseguridad",
-      logoUrl: "/bbk.svg",
+      logoUrl: "/bbk.png",
       start: "Mar 2025",
       end: "Actualidad",
     },
