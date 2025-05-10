@@ -18,6 +18,8 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  target?: string;
+  rel?: string;
 }
 export const ResumeCard = ({
   logoUrl,
@@ -28,6 +30,8 @@ export const ResumeCard = ({
   badges,
   period,
   description,
+  target,
+  rel,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -43,6 +47,8 @@ export const ResumeCard = ({
       href={href || "#"}
       className="block cursor-pointer"
       onClick={handleClick}
+      target={target}
+      rel={rel}
     >
       <Card className="flex">
         <div className="flex-none">

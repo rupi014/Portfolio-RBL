@@ -101,6 +101,7 @@ export const DATA = {
       logoUrl: "/bbk.png",
       start: "Mar 2025",
       end: "Actualidad",
+      description: "Programa intensivo de ciberseguridad que cubre fundamentos de seguridad, análisis de vulnerabilidades, respuesta a incidentes y seguridad en la nube."
     },
     {
       school: "Bottega University",
@@ -109,6 +110,7 @@ export const DATA = {
       logoUrl: "/bottega.jpeg",
       start: "Feb 2024",
       end: " Oct 2024",
+      description: "Programa completo de desarrollo web que abarca tanto el frontend como el backend, incluyendo React, Node.js, y bases de datos."
     },
     {
       school: "Universidad de Salamanca",
@@ -117,6 +119,7 @@ export const DATA = {
       logoUrl: "/usal.png",
       start: "2014",
       end: "2016",
+      description: "Especialización en el tratamiento y cuidado de personas con enfermedades neurodegenerativas, con enfoque en la mejora de la calidad de vida."
     },
     {
       school: "Universidad de Castilla-La Mancha",
@@ -125,6 +128,7 @@ export const DATA = {
       logoUrl: "/uclm.png",
       start: "2010",
       end: "2014",
+      description: "Formación en la promoción de la salud y el bienestar a través de la ocupación, con especial atención a la rehabilitación y la adaptación funcional."
     },
     {
       school: "Conservatorio Profesional de Música de Ciudad Real",
@@ -133,7 +137,18 @@ export const DATA = {
       logoUrl: "/conser.jpg",
       start: "2000",
       end: "2008",
+      description: "Formación musical especializada en piano, incluyendo teoría musical, composición y técnicas de interpretación."
     }
+  ],
+  certifications: [
+    {
+      title: "Google Cybersecurity Professional Certificate V2",
+      issuer: "Google",
+      href: "https://www.credly.com/badges/f68a2936-db07-459d-8c48-a8932e3ec7e1/public_url",
+      logoUrl: "/google.png",
+      date: "May 2025",
+    },
+
   ],
   projects: [
     {

@@ -86,12 +86,38 @@ export default function Page() {
             >
               <ResumeCard
                 key={education.school}
-                href={education.href}
+                href={undefined}
                 logoUrl={education.logoUrl}
                 altText={education.school}
                 title={education.school}
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
+                description={education.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      <section id="certifications">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+            <h2 className="text-xl font-bold">Certificaciones</h2>
+          </BlurFade>
+          {DATA.certifications.map((certification, id) => (
+            <BlurFade
+              key={certification.title}
+              delay={BLUR_FADE_DELAY * 9 + id * 0.05}
+            >
+              <ResumeCard
+                key={certification.title}
+                href={certification.href}
+                logoUrl={certification.logoUrl}
+                altText={certification.issuer}
+                title={certification.title}
+                subtitle={certification.issuer}
+                period={certification.date}
+                target="_blank"
+                rel="noopener noreferrer"
               />
             </BlurFade>
           ))}
