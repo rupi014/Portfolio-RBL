@@ -160,7 +160,7 @@ export const DATA = {
   projects: [
     {
       title: "Pentest Metasploitable 3",
-      href: "/informe.pdf",
+      href: "https://drive.google.com/file/d/1mssi21O4jP8Iy6oRynBJiF0YCzSEmDBC/view?usp=sharing",
       dates: "May 2025",
       active: true,
       description:
@@ -178,7 +178,7 @@ export const DATA = {
       links: [
         {
           type: "Ver PDF",
-          href: "/informe.pdf",
+          href: "https://drive.google.com/file/d/1mssi21O4jP8Iy6oRynBJiF0YCzSEmDBC/view?usp=sharing",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -187,7 +187,7 @@ export const DATA = {
     },
     {
       title: "Análisis de Malware",
-      href: "/analisis-malware.pdf",
+      href: "https://drive.google.com/file/d/1IadOZ8PchSVcTRVHpM779dH60ZQpMsB8/view?usp=sharing",
       dates: "May 2025",
       active: true,
       description:
@@ -205,7 +205,7 @@ export const DATA = {
       links: [
         {
           type: "Ver PDF",
-          href: "/analisis-malware.pdf",
+          href: "https://drive.google.com/file/d/1IadOZ8PchSVcTRVHpM779dH60ZQpMsB8/view?usp=sharing",
           icon: <Icons.globe className="size-3" />,
         },
       ],
