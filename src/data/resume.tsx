@@ -13,6 +13,13 @@ export const DATA = {
     "Mi progresión profesional me ha conducido a la ciberseguridad, un área que me apasiona y a la que me gustaría dedicarme por completo. Comencé mi carrera como terapeuta ocupacional, donde adquirí habilidades de liderazgo y trabajo en equipo. Posteriormente, me adentré en el desarrollo Full Stack, construyendo soluciones web como una web personal y una para un equipo de eSports. Ahora, aplico este background único al pentesting y análisis de vulnerabilidades para proteger entornos digitales.",
   avatarUrl: "/me.jpg",
   skills: [
+    "Kali Linux",
+    "Metasploit",
+    "BurpSuite",
+    "Wireshark",
+    "PE Studio",
+    "ILSpy",
+    "Ghidra",
     "HTML",
     "SCSS/SASS",
     "JavaScript",
@@ -166,6 +173,7 @@ export const DATA = {
         "Caja Negra",
         "Caja Blanca",
         "Análisis de vulnerabilidades",
+        "Recomendaciones de seguridad",
       ],
       links: [
         {
@@ -175,6 +183,33 @@ export const DATA = {
         },
       ],
       image: "/pentest.png",
+      video: "",
+    },
+    {
+      title: "Análisis de Malware",
+      href: "/analisis-malware.pdf",
+      dates: "May 2025",
+      active: true,
+      description:
+        "Análisis detallado de un malware utilizando herramientas de análisis estático y dinámico. Identificación de patrones de comportamiento, técnicas de evasión y recomendaciones de mitigación. El análisis incluye ingeniería inversa, análisis de red y evaluación de impacto.",
+      technologies: [
+        "Ghidra",
+        "Wireshark",
+        "PE Studio",
+        "ILSpy",
+        "Análisis Estático",
+        "Análisis Dinámico",
+        "Análisis de Código",
+        "Ingeniería Inversa",
+      ],
+      links: [
+        {
+          type: "Ver PDF",
+          href: "/analisis-malware.pdf",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/malware.png",
       video: "",
     },
     {
@@ -201,7 +236,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Source",
+          type: "GitHub",
           href: "https://github.com/rupi014/vikings-frontend",
           icon: <Icons.github className="size-3" />,
         },
@@ -233,7 +268,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Source",
+          type: "GitHub",
           href: "https://github.com/rupi014/frontend-api",
           icon: <Icons.github className="size-3" />,
         },
@@ -262,7 +297,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Source",
+          type: "GitHub",
           href: "https://github.com/rupi014/pokecheck",
           icon: <Icons.github className="size-3" />,
         },
