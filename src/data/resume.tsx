@@ -8,9 +8,9 @@ export const DATA = {
   location: "Portugalete, Vizcaya",
   locationLink: "https://www.google.com/maps/place/Portugalete",
   description:
-    "Desarrollador en transición desde el sector de la salud. Apasionado por la tecnología y por crear soluciones que mejoren la vida de las personas.",
+    "Profesional en transición a la ciberseguridad, integro mi formación en Full Stack y mi experiencia en el sector de la salud para aportar una perspectiva única. Me especializo en pentesting y análisis de vulnerabilidades para entornos robustos.",
   summary:
-    "Después de trabajar varios años como terapeuta ocupacional, decidí adentrarme en el mundo de la programación para unir mis conocimientos en salud con mi pasión por la tecnología. Hasta ahora, he desarrollado una web personal y una web para un equipo de eSports. Estoy constantemente ampliando mis habilidades en programación. Con un gran interés en informática, mi motivación principal es seguir aprendiendo y desarrollar proyectos que generen un impacto positivo en las personas.",
+    "Mi progresión profesional me ha conducido a la ciberseguridad, un área que me apasiona y a la que me gustaría dedicarme por completo. Comencé mi carrera como terapeuta ocupacional, donde adquirí habilidades de liderazgo y trabajo en equipo. Posteriormente, me adentré en el desarrollo Full Stack, construyendo soluciones web como una web personal y una para un equipo de eSports. Ahora, aplico este background único al pentesting y análisis de vulnerabilidades para proteger entornos digitales.",
   avatarUrl: "/me.jpg",
   skills: [
     "HTML",
@@ -151,6 +151,32 @@ export const DATA = {
 
   ],
   projects: [
+    {
+      title: "Pentest Metasploitable 3",
+      href: "/informe.pdf",
+      dates: "May 2025",
+      active: true,
+      description:
+        "Pentest exhaustivo sobre Metasploitable3, abarcando desde la fase de caja negra hasta la elevación de privilegios a root. Identificación y explotación de múltiples vulnerabilidades críticas, demostrando un compromiso total del sistema y ofreciendo recomendaciones de seguridad detalladas.",
+      technologies: [
+        "Metasploitable 3",
+        "Kali Linux",
+        "Nmap",
+        "Metasploit",
+        "Caja Negra",
+        "Caja Blanca",
+        "Análisis de vulnerabilidades",
+      ],
+      links: [
+        {
+          type: "Ver PDF",
+          href: "/informe.pdf",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/pentest.png",
+      video: "",
+    },
     {
       title: "Vikings eSports Club",
       href: "https://vikingsoftherift.netlify.app/",
