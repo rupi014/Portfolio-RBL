@@ -8,7 +8,7 @@ export const DATA = {
   location: "Portugalete, Vizcaya",
   locationLink: "https://www.google.com/maps/place/Portugalete",
   description:
-    "Profesional en transición a la ciberseguridad, integro mi formación en Full Stack y mi experiencia en el sector de la salud para aportar una perspectiva única. Me especializo en pentesting y análisis de vulnerabilidades para entornos robustos.",
+    "Técnico junior en ciberseguridad, integro mi formación en Full Stack y mi experiencia en el sector de la salud para aportar una perspectiva única. Me especializo en pentesting y análisis de vulnerabilidades para entornos robustos.",
   summary:
     "Mi progresión profesional me ha conducido a la ciberseguridad, un área que me apasiona y a la que me gustaría dedicarme por completo. Comencé mi carrera como terapeuta ocupacional, donde adquirí habilidades de liderazgo y trabajo en equipo. Posteriormente, me adentré en el desarrollo Full Stack, construyendo soluciones web como una web personal y una para un equipo de eSports. Ahora, aplico este background único al pentesting y análisis de vulnerabilidades para proteger entornos digitales.",
   avatarUrl: "/me.jpg",
