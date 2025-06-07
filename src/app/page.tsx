@@ -61,7 +61,7 @@ export default function Page() {
                   Mira mis últimos trabajos
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                He trabajado en diversos proyectos, desde pruebas de penetración y análisis de malware hasta desarrollo web .Aquí puedes consultarlos.
+                He trabajado en diversos proyectos, desde pruebas de penetración y análisis de malware hasta desarrollo web. Aquí puedes consultarlos.
                 </p>
               </div>
             </div>
