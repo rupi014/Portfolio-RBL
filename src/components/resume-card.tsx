@@ -50,7 +50,7 @@ export const ResumeCard = ({
       target={target}
       rel={rel}
     >
-      <Card className="flex">
+      <Card className="flex transition-all hover:border-blue-400 hover:p-4">
         <div className="flex-none">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
@@ -79,12 +79,14 @@ export const ResumeCard = ({
                     ))}
                   </span>
                 )}
-                <ChevronRightIcon
+                <span
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
+                    "ml-2 transition-transform duration-300 group-hover:rotate-90 group-hover:text-black-500 text-muted-foreground",
                   )}
-                />
+                  title="Haz clic para ver más"
+                >
+                  <ChevronRightIcon />
+                </span>
               </h3>
               <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
