@@ -84,7 +84,7 @@ export const DATA = {
       start: "Feb 2023",
       end: "Jun 2024",
       description:
-      "Realicé sustituciones como terapeuta ocupacional en los centros de Gallarta, Virginetxe, Bekoetxe y Leioa de IFAS Bizkaia, adaptándome a diversos entornos y necesidades terapéuticas, y fortaleciendo mi capacidad de adaptación y trabajo en equipo."
+      "Trabajé como terapeuta ocupacional en los centros de Gallarta, Virginetxe, Bekoetxe y Leioa de IFAS Bizkaia, adaptándome a diversos entornos y necesidades terapéuticas, y fortaleciendo mi capacidad de adaptación y trabajo en equipo."
     },
 
     {
@@ -108,7 +108,11 @@ export const DATA = {
       logoUrl: "/bbk.png",
       start: "Mar 2025",
       end: "Actualidad",
-      description: "Programa intensivo de ciberseguridad que cubre fundamentos de seguridad, análisis de vulnerabilidades, respuesta a incidentes y seguridad en la nube."
+      description: `Programa intensivo de ciberseguridad que cubre fundamentos de seguridad, análisis de vulnerabilidades, respuesta a incidentes y seguridad en la nube.
+
+🔴RED TEAM - Análisis de Objetivos, Ataques a Infraestructuras de Sistemas y Redes, Ataques a Aplicaciones Web, Ataques a Aplicaciones Móviles, Ataques a Redes Wireless, Explotación y Post-Explotación, Elevación de Privilegios, Evasión de Defensas, Reconocimiento Interno y Movimientos Laterales.
+
+🔵BLUE TEAM - Protección de Activos, Análisis Forense y Respuesta ante Incidentes (DFIR), Análisis de Malware, Sistemas de Información de Seguridad y Gestión de Eventos (SIEM)`
     },
     {
       school: "Bottega University",
@@ -117,7 +121,7 @@ export const DATA = {
       logoUrl: "/bottega.jpeg",
       start: "Feb 2024",
       end: " Oct 2024",
-      description: "Programa completo de desarrollo web que abarca tanto el frontend como el backend, incluyendo React, Node.js, y bases de datos."
+      description: "Este curso de Programación Full Stack me ha capacitado para desarrollar aplicaciones web completas, abarcando tanto el front-end como el back-end. He adquirido habilidades en JavaScript, HTML, CSS y React para crear interfaces de usuario dinámicas y atractivas, y en Python para desarrollar el back-end y construir APIs funcionales. También he aprendido sobre bases de datos, logrando diseñar y gestionar sistemas de almacenamiento de datos eficientes. Esta formación integral me ha dado una base sólida en programación y las herramientas necesarias para crear aplicaciones web modernas, escalables y orientadas a mejorar la experiencia del usuario."
     },
     {
       school: "Universidad de Salamanca",
@@ -148,6 +152,13 @@ export const DATA = {
     }
   ],
   certifications: [
+    {
+      title: "eJPTv2 || eLearnSecurity Junior Penetration Tester v2",
+      issuer: "INE Security",
+      href: "#",
+      logoUrl: "/ejpt.png",
+      date: "Jun 2025",
+    },
     {
       title: "Google Cybersecurity Professional Certificate V2",
       issuer: "Google",
