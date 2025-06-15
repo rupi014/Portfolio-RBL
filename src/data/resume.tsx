@@ -107,7 +107,7 @@ export const DATA = {
       degree: "Certificado Junior en Ciberseguridad",
       logoUrl: "/bbk.png",
       start: "Mar 2025",
-      end: "Actualidad",
+      end: "Jun 2025",
       description: `Programa intensivo de ciberseguridad que cubre fundamentos de seguridad, análisis de vulnerabilidades, respuesta a incidentes y seguridad en la nube.
 
 🔴RED TEAM - Análisis de Objetivos, Ataques a Infraestructuras de Sistemas y Redes, Ataques a Aplicaciones Web, Ataques a Aplicaciones Móviles, Ataques a Redes Wireless, Explotación y Post-Explotación, Elevación de Privilegios, Evasión de Defensas, Reconocimiento Interno y Movimientos Laterales.
