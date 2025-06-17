@@ -155,7 +155,7 @@ export const DATA = {
     {
       title: "eJPTv2 || eLearnSecurity Junior Penetration Tester v2",
       issuer: "INE Security",
-      href: "#",
+      href: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/150833169",
       logoUrl: "/ejpt.png",
       date: "Jun 2025",
     },
