@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -34,6 +34,16 @@ export const ResumeCard = ({
   rel,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
+  const [height, setHeight] = React.useState(0);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    if (isExpanded && contentRef.current) {
+      setHeight(contentRef.current.scrollHeight);
+    } else {
+      setHeight(0);
+    }
+  }, [isExpanded, description]);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
@@ -50,7 +60,7 @@ export const ResumeCard = ({
       target={target}
       rel={rel}
     >
-      <Card className="flex transition-all hover:border-blue-400 hover:p-4">
+      <Card className="flex min-h-0 transition-all hover:border-blue-400 hover:shadow-lg hover:scale-[1.02] transition-all duration-200 dark:hover:border-blue-300 items-start">
         <div className="flex-none">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
@@ -61,7 +71,7 @@ export const ResumeCard = ({
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
+        <div className="flex-grow ml-4 flex flex-col group">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
@@ -99,20 +109,23 @@ export const ResumeCard = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-                height: isExpanded ? "auto" : 0,
+                height: isExpanded ? height : 0,
               }}
               transition={{
-                duration: 0.7,
+                duration: 0.5,
                 ease: [0.16, 1, 0.3, 1],
               }}
+              style={{ overflow: "hidden" }}
               className="mt-2 text-xs sm:text-sm"
             >
-              {description.split("\n").map((line, idx) => (
-                <React.Fragment key={idx}>
-                  {line}
-                  <br />
-                </React.Fragment>
-              ))}
+              <div ref={contentRef}>
+                {description.split("\n").map((line, idx) => (
+                  <React.Fragment key={idx}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </div>
             </motion.div>
           )}
         </div>
