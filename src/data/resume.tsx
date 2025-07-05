@@ -155,8 +155,15 @@ export const DATA = {
     {
       title: "eJPTv2 || eLearnSecurity Junior Penetration Tester v2",
       issuer: "INE Security",
-      href: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/150833169",
+      href: "https://certs.ine.com/309dd480-900b-413e-958c-7e31a78833f6#acc.hWT1Gs5S",
       logoUrl: "/ejpt.png",
+      date: "Jun 2025",
+    },
+    {
+      title: "ICCA || INE Certified Cloud Associate",
+      issuer: "INE Security",
+      href: "https://certs.ine.com/0c2d99dc-621c-4629-a7fb-e0e4c043b9b6#acc.Yr7sA23z",
+      logoUrl: "/icca.png",
       date: "Jun 2025",
     },
     {
