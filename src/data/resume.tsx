@@ -75,6 +75,30 @@ export const DATA = {
 
   work: [
     {
+      company: "Terra",
+      href: "https://terrahq.com/",
+      badges: [],
+      location: "Bilbao",
+      title: "Técnico Junioren Ciberseguridad",
+      logoUrl: "/terra.png",
+      start: "Jun 2025",
+      end: "Jun 2025",
+      description:
+      "Lideré el equipo de Ciberseguridad en el Desafío de Tripulaciones de BBK Bootcamp. Este fue un programa intensivo de Terra que nos permitió, durante dos semanas, colaborar estrechamente con los equipos de Marketing Digital, Data Science y Desarrollo Full Stack. Mi función principal fue la de coordinar a cuatro miembros del equipo de Ciberseguridad, asignando responsabilidades y garantizando que el equipo estuviera siempre en sintonía. \n \n Realicé tareas de OSINT, auditoría de código con ESLint y SonarQube, y análisis de vulnerabilidades utilizando BurpSuite y Wireshark para identificar brechas de seguridad en sistemas y aplicaciones web. También investigué normativas aplicables para asegurar el cumplimiento legal y crear directrices de conformidad."
+    },
+    {
+      company: "Bottega University",
+      href: "https://bottega.edu/",
+      badges: [],
+      location: "Bilbao",
+      title: "Programador Full Stack Junior",
+      logoUrl: "/bottega.jpeg",
+      start: "Sept 2024",
+      end: "Oct 2024",
+      description:
+      "Como parte de mi trabajo final de bootcamp en Bottega University, concebí y desarrollé de forma autónoma el sitio web oficial de un club de eSports. Este proyecto me permitió aplicar y consolidar mis conocimientos como desarrollador full stack, creando una plataforma completa y funcional. \n \n Tecnologías Utilizadas: \n - Front-End: React, JavaScript, SCSS \n - Back-End: Python (FastAPI), MySQL \n - Otros: EmailJS, HTML"
+    },
+    {
       company: "IFAS Bizkaia",
       href: "https://ifas.bizkaia.eus/?idioma=ca",
       badges: [],
@@ -101,6 +125,15 @@ export const DATA = {
     }
   ],
   education: [
+    {
+      school: "Linkia FP - ASIR con Ciberseguridad",
+      href: "https://linkiafp.es/fp-grado-superior-ciberseguridad-a-distancia/",
+      degree: "Administración de Sistemas en Red (ASIR) con especialización en ciberseguridad.",
+      logoUrl: "/linkia.png",
+      start: "Feb 2026",
+      end: "Actualidad",
+      description: "Durante el FP de Grado Superior en Ciberseguridad que estoy cursando actualmente, estoy adquiriendo conocimientos en administración de sistemas informáticos en red con especialización en seguridad. Estoy aprendiendo a detectar, prevenir y corregir incidentes de seguridad, además de desarrollar competencias en hacking ético, administración de redes, gestión de bases de datos y programación. También me estoy formando en análisis de ataques informáticos y protección de infraestructuras tecnológicas."
+    },
     {
       school: "BBK Bootcamp - Ciberseguridad",
       href: "https://bbkbootcamps.thebridge.tech/ciberseguridad",
@@ -167,12 +200,34 @@ export const DATA = {
       date: "Jun 2025",
     },
     {
+      title: "Ethical Hacking Professional Certification - CEHPC™",
+      issuer: "Certiprof",
+      href: "https://www.credly.com/badges/78832eca-75f0-4955-a165-ada26dc2274e/linked_in_profile",
+      logoUrl: "/et-ha.png",
+      date: "Sep 2025",
+    },
+    {
+      title: "Lead Cybersecurity Professional Certification - LCSPC™",
+      issuer: "Certiprof",
+      href: "https://www.credly.com/badges/11ee5824-06c8-4650-84bc-8d5a979bfa31/linked_in_profile",
+      logoUrl: "/le-ci.png",
+      date: "Sep 2025",
+    },
+    {
+      title: "Certified ISO 27001 Lead Auditor - I27001LA™",
+      issuer: "Certiprof",
+      href: "https://www.credly.com/badges/7d23361d-4044-48c7-b838-c266cfa28e40/linked_in_profile",
+      logoUrl: "/le-iso.png",
+      date: "Sep 2025",
+    },
+    {
       title: "Google Cybersecurity Professional Certificate V2",
       issuer: "Google",
       href: "https://www.credly.com/badges/f68a2936-db07-459d-8c48-a8932e3ec7e1/public_url",
       logoUrl: "/google.png",
       date: "May 2025",
     },
+    
 
   ],
   projects: [
