@@ -75,6 +75,17 @@ export const DATA = {
 
   work: [
     {
+      company: "BBK Bootcamp by The Bridge",
+      href: "https://bbkbootcamps.thebridge.tech/ciberseguridad",
+      badges: [],
+      location: "Bilbao",
+      title: "Teacher Assistant en Ciberseguridad",
+      logoUrl: "/bridge.png",
+      start: "Feb 2026",
+      end: "Actualidad",
+      description: "Teaching Assistant en bootcamp de ciberseguridad, con foco en el acompañamiento cercano al estudiantado y la resolución de problemas técnicos durante todo el proceso formativo; dar soporte al Lead Instructor en la gestión diaria del aula y la organización de contenidos, resolver dudas de primer nivel sobre ejercicios, proyectos y conceptos clave, guiar al alumnado en la depuración de errores y la comprensión de buenas prácticas. \n \n Asegurar el acceso de todo el grupo a recursos y grabaciones tanto en presencial como en remoto, colaborar en la corrección y el feedback continuo y contribuir a un entorno de aprendizaje seguro, motivador y orientado a que cada estudiante alcance los objetivos del programa."
+    },
+    {
       company: "Terra",
       href: "https://terrahq.com/",
       badges: [],
