@@ -90,7 +90,7 @@ export const DATA = {
       href: "https://terrahq.com/",
       badges: [],
       location: "Bilbao",
-      title: "Técnico Junioren Ciberseguridad",
+      title: "Técnico Junior en Ciberseguridad",
       logoUrl: "/terra.png",
       start: "Jun 2025",
       end: "Jun 2025",
