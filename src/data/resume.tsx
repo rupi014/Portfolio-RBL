@@ -186,6 +186,13 @@ export const DATA = {
   ],
   certifications: [
     {
+      title: "eWPT || eLearnSecurity Web Application Penetration Tester",
+      issuer: "INE Security",
+      href: "https://certs.ine.com/082ee53c-62eb-4114-81ab-04a0b3b6d529#acc.8nq93tku",
+      logoUrl: "/ewpt.png",
+      date: "Apr 2026",
+    },
+    {
       title: "eJPTv2 || eLearnSecurity Junior Penetration Tester v2",
       issuer: "INE Security",
       href: "https://certs.ine.com/309dd480-900b-413e-958c-7e31a78833f6#acc.hWT1Gs5S",
