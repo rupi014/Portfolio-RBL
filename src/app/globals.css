@@ -4,65 +4,75 @@
 
 @layer base {
     :root {
-      --background: 0 0% 100%;
-      --foreground: 210 11.1% 3.53%;
+      --background: 150 16% 96%; /* Soft silver-sage light background for high-end tech aesthetic */
+      --foreground: 160 30% 12%; /* Elegant deep forest charcoal for soft premium contrast */
 
-      --card: 0 0% 100%;
-      --card-foreground: 210 11.1% 3.53%;
+      --card: 0 0% 100%; /* Pure white elevated cards for layered visual hierarchy */
+      --card-foreground: 160 30% 12%;
 
       --popover: 0 0% 100%;
-      --popover-foreground: 210 11.1% 3.53%;
+      --popover-foreground: 160 30% 12%;
 
-      --primary: 0 0% 9%;
-      --primary-foreground: 0 0% 98%;
+      --primary: 142.1 70% 32%; /* Premium emerald green, fully legible in light mode */
+      --primary-foreground: 150 20% 98%;
 
-      --secondary: 0 0% 96.1%;
-      --secondary-foreground: 0 0% 9%;
+      --secondary: 150 15% 91%; /* Light minty gray for buttons/elements */
+      --secondary-foreground: 160 30% 15%;
 
-      --muted: 0 0% 96.1%;
-      --muted-foreground: 0 0% 45.1%;
+      --muted: 150 12% 91%;
+      --muted-foreground: 160 12% 42%;
 
-      --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+      --accent: 142.1 30% 92%; /* Dynamic mint highlight states */
+      --accent-foreground: 142.1 70% 28%;
 
       --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 0 0% 98%;
+      --destructive-foreground: 210 40% 98%;
 
-      --border: 0 0% 89.8%;
-      --input: 0 0% 89.8%;
-      --ring: 0 0% 3.9%;
+      --border: 150 15% 88%; /* Very subtle silver-sage borders */
+      --input: 150 15% 88%;
+      --ring: 142.1 76.2% 45.3%;
 
-      --radius: 0.5rem;
+      --radius: 1rem;
+
+      --cyber-accent: 142.1 70% 32%;
+      --cyber-cyan: 189.3 80% 32%;
+      --cyber-purple: 263.4 55% 42%;
+      --cyber-glow: 142.1 70% 32%;
     }
 
     .dark {
-      --background: 210 11.1% 3.53%;
-      --foreground: 0 0% 98%;
+      --background: 230 40% 5%;
+      --foreground: 210 40% 98%;
 
-      --card: 210 11.1% 3.53%;
-      --card-foreground: 0 0% 98%;
+      --card: 230 35% 8%;
+      --card-foreground: 210 40% 98%;
 
-      --popover: 210 11.1% 3.53%;
-      --popover-foreground: 0 0% 98%;
+      --popover: 230 40% 5%;
+      --popover-foreground: 210 40% 98%;
 
-      --primary: 0 0% 98%;
-      --primary-foreground: 0 0% 9%;
+      --primary: 142.1 76.2% 45.3%;
+      --primary-foreground: 230 40% 5%;
 
-      --secondary: 0 0% 14.9%;
-      --secondary-foreground: 0 0% 98%;
+      --secondary: 230 20% 12%;
+      --secondary-foreground: 210 40% 98%;
 
-      --muted: 0 0% 14.9%;
-      --muted-foreground: 0 0% 63.9%;
+      --muted: 230 20% 12%;
+      --muted-foreground: 215 20.2% 65.1%;
 
-      --accent: 0 0% 14.9%;
-      --accent-foreground: 0 0% 98%;
+      --accent: 230 20% 15%;
+      --accent-foreground: 210 40% 98%;
 
       --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 0% 98%;
+      --destructive-foreground: 210 40% 98%;
 
-      --border: 0 0% 14.9%;
-      --input: 0 0% 14.9%;
-      --ring: 0 0% 83.1%;
+      --border: 230 20% 14%;
+      --input: 230 20% 14%;
+      --ring: 142.1 76.2% 45.3%;
+
+      --cyber-accent: 142.1 76.2% 45.3%;
+      --cyber-cyan: 189.3 94.6% 43.5%;
+      --cyber-purple: 263.4 70% 50.4%;
+      --cyber-glow: 142.1 76.2% 45.3%;
     }
   }
 
@@ -141,4 +151,132 @@ code[data-line-numbers-max-digits="2"] > [data-line]::before {
  
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
+}
+
+/* Cyber Aesthetic Utilities */
+.cyber-grid-bg {
+  background-image: radial-gradient(rgba(16, 185, 129, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dark .cyber-grid-bg {
+  background-image: radial-gradient(rgba(16, 185, 129, 0.09) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.cyber-mesh-glow-1 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.16) 0%, transparent 70%);
+  filter: blur(55px);
+  z-index: -10;
+  pointer-events: none;
+  animation: float-slow 15s ease-in-out infinite alternate;
+}
+
+.cyber-mesh-glow-2 {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.14) 0%, transparent 70%);
+  filter: blur(65px);
+  z-index: -10;
+  pointer-events: none;
+  animation: float-slow-reverse 18s ease-in-out infinite alternate;
+}
+
+.dark .cyber-mesh-glow-1 {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.14) 0%, transparent 70%);
+}
+
+.dark .cyber-mesh-glow-2 {
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.11) 0%, transparent 70%);
+}
+
+.cyber-glow-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(16, 185, 129, 0.12); /* Subtle emerald tint border in light mode */
+  box-shadow: 0 8px 30px -10px rgba(16, 185, 129, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.cyber-glow-card:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 15px 35px -5px rgba(16, 185, 129, 0.14), 0 4px 12px rgba(0, 0, 0, 0.03);
+  transform: translateY(-2px);
+}
+
+.dark .cyber-glow-card {
+  background: rgba(15, 20, 35, 0.5);
+  border: 1px solid rgba(16, 185, 129, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dark .cyber-glow-card:hover {
+  border-color: rgba(16, 185, 129, 0.25);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.08);
+  transform: translateY(-2px);
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background-color: hsl(var(--cyber-accent));
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+/* Animations */
+@keyframes blink {
+  from, to { background-color: transparent }
+  50% { background-color: hsl(var(--cyber-accent)) }
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(30px, -40px) scale(1.1);
+  }
+  100% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes float-slow-reverse {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 30px) scale(1.15);
+  }
+  100% {
+    transform: translate(20px, -20px) scale(0.95);
+  }
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.3);
 }

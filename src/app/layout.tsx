@@ -57,13 +57,18 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          "min-h-screen bg-background font-sans antialiased py-12 sm:py-24 px-4 sm:px-8 relative overflow-x-hidden",
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           <TooltipProvider delayDuration={0}>
-            {children}
+            <div className="cyber-grid-bg absolute inset-0 pointer-events-none opacity-40 dark:opacity-60 z-[-20]" />
+            <div className="cyber-mesh-glow-1" />
+            <div className="cyber-mesh-glow-2" />
+            <div className="w-full max-w-5xl mx-auto relative z-10">
+              {children}
+            </div>
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
