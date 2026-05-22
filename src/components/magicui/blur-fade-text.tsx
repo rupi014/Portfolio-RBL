@@ -35,7 +35,7 @@ const BlurFadeText = ({
 
   if (animateByCharacter) {
     return (
-      <div className="flex">
+      <div className="inline-flex">
         <AnimatePresence>
           {characters.map((char, i) => (
             <motion.span
@@ -60,7 +60,7 @@ const BlurFadeText = ({
   }
 
   return (
-    <div className="flex">
+    <div className="inline-flex">
       <AnimatePresence>
         <motion.span
           initial="hidden"
