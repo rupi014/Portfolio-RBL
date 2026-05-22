@@ -23,7 +23,7 @@ function TerminalWidget() {
         <span className="text-[10px] text-zinc-500 ml-2 select-none">rupi014@security-node:~</span>
       </div>
       <div className="space-y-2 leading-relaxed">
-        <p className="text-zinc-500 font-normal select-none">// rubens-profile.sh</p>
+        <p className="text-zinc-500 font-normal select-none">&#47;&#47; rubens-profile.sh</p>
         
         <p className="flex items-center gap-1.5">
           <span className="text-zinc-500">rupi014@node:~$</span>
@@ -55,7 +55,7 @@ function TerminalWidget() {
           <span className="text-zinc-500">rupi014@node:~$</span>
           <span className="text-white">load --top-creds</span>
         </p>
-        <p className="pl-3 text-cyan-400 font-semibold flex items-center gap-1.5">// eWPT | eJPTv2 | ICCA | CEHPC</p>
+        <p className="pl-3 text-cyan-400 font-semibold flex items-center gap-1.5">&#47;&#47; eWPT | eJPTv2 | ICCA | CEHPC</p>
         
         <p className="flex items-center gap-1.5 mt-3">
           <span className="text-zinc-500">rupi014@node:~$</span>
@@ -188,7 +188,7 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY * 4} className="h-full">
               <div className="cyber-glow-card rounded-3xl p-6 sm:p-8 flex flex-col h-full border border-black/[0.04] dark:border-white/[0.05] relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-4 text-[9px] font-mono text-neutral-400 dark:text-neutral-600 font-bold tracking-widest pointer-events-none select-none uppercase">
-                  // RESUMEN_LOG_01
+                  &#47;&#47; RESUMEN_LOG_01
                 </div>
                 <div className="flex items-center gap-2 mb-4">
                   <div className="p-2 rounded-lg bg-emerald-500/5 text-emerald-500 border border-emerald-500/10">
@@ -214,7 +214,7 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY * 5} className="h-full">
               <div className="cyber-glow-card rounded-3xl p-6 sm:p-8 flex flex-col h-full border border-black/[0.04] dark:border-white/[0.05] relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-4 text-[9px] font-mono text-neutral-400 dark:text-neutral-600 font-bold tracking-widest pointer-events-none select-none uppercase">
-                  // DEPLOYED_TECH_02
+                  &#47;&#47; DEPLOYED_TECH_02
                 </div>
                 <div className="flex items-center gap-2 mb-4">
                   <div className="p-2 rounded-lg bg-emerald-500/5 text-emerald-500 border border-emerald-500/10">
@@ -437,7 +437,7 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 14}>
           <div className="cyber-glow-card rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden border border-black/[0.04] dark:border-white/[0.05] dark:border-emerald-500/10 max-w-4xl mx-auto shadow-xl group">
             <div className="absolute top-0 right-0 p-4 text-[9px] font-mono text-neutral-400 dark:text-neutral-600 font-bold tracking-widest pointer-events-none select-none uppercase">
-              // COMM_LINK_INIT
+              &#47;&#47; COMM_LINK_INIT
             </div>
             
             {/* Ambient inner glow for contact */}
