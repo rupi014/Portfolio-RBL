@@ -20,19 +20,19 @@ function TerminalWidget() {
         <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
         <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
         <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
-        <span className="text-[10px] text-zinc-500 ml-2 select-none">rupi014@security-node:~</span>
+        <span className="text-[10px] text-zinc-500 ml-2 select-none">rupi014@portfolio:~</span>
       </div>
       <div className="space-y-2 leading-relaxed">
         <p className="text-zinc-500 font-normal select-none">&#47;&#47; rubens-profile.sh</p>
-        
+
         <p className="flex items-center gap-1.5">
-          <span className="text-zinc-500">rupi014@node:~$</span>
+          <span className="text-zinc-500">rupi014@portfolio:~$</span>
           <span className="text-white">whoami</span>
         </p>
         <p className="text-emerald-400 font-bold pl-3">➔ Rubens Ballester Lillo</p>
-        
+
         <p className="flex items-center gap-1.5 mt-3">
-          <span className="text-zinc-500">rupi014@node:~$</span>
+          <span className="text-zinc-500">rupi014@portfolio:~$</span>
           <span className="text-white">get --details</span>
         </p>
         <div className="pl-3 text-zinc-300 space-y-1 break-words">
@@ -43,22 +43,23 @@ function TerminalWidget() {
         </div>
 
         <p className="flex items-center gap-1.5 mt-3">
-          <span className="text-zinc-500">rupi014@node:~$</span>
+          <span className="text-zinc-500">rupi014@portfolio:~$</span>
           <span className="text-white">check-shields</span>
         </p>
         <p className="pl-3 text-emerald-400 flex items-center gap-2 select-none font-bold">
           <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse shadow-[0_0_8px_#10b981]" />
           <span>[SYSTEM ACTIVE & SECURED]</span>
         </p>
-        
+
         <p className="flex items-center gap-1.5 mt-3">
-          <span className="text-zinc-500">rupi014@node:~$</span>
+          <span className="text-zinc-500">rupi014@portfolio:~$</span>
           <span className="text-white">load --top-creds</span>
         </p>
-        <p className="pl-3 text-cyan-400 font-semibold flex items-center gap-1.5">&#47;&#47; eWPT | eJPTv2 | ICCA | CEHPC</p>
-        
+
+        <p className="pl-3 text-emerald-400 font-bold items-center gap-1.5">➔ eWPT | eJPTv2 | ICCA | CEHPC</p>
+
         <p className="flex items-center gap-1.5 mt-3">
-          <span className="text-zinc-500">rupi014@node:~$</span>
+          <span className="text-zinc-500">rupi014@portfolio:~$</span>
           <span className="text-white">_</span>
           <span className="terminal-cursor" />
         </p>
@@ -90,7 +91,7 @@ export default function Page() {
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-16 sm:space-y-24 pb-20">
-      
+
       {/* HERO SECTION — 3-column: portrait left | text center | terminal right */}
       <section id="hero" className="w-full pt-4">
         <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr_340px] gap-6 xl:gap-8 items-center">
@@ -182,7 +183,7 @@ export default function Page() {
       {/* DASHBOARD: BENTO GRID SECTION (ABOUT & SKILLS) */}
       <section id="bento-dashboard" className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-          
+
           {/* Bento Box 1: Sobre mí (3/5 width) */}
           <div className="md:col-span-3">
             <BlurFade delay={BLUR_FADE_DELAY * 4} className="h-full">
@@ -224,7 +225,7 @@ export default function Page() {
                     Habilidades
                   </h3>
                 </div>
-                
+
                 {/* Categorized Skills Stack */}
                 <div className="space-y-4 flex-grow">
                   {skillsCategories.map((cat, idx) => (
@@ -268,7 +269,7 @@ export default function Page() {
               </p>
             </div>
           </BlurFade>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl mx-auto pt-4">
             {DATA.projects.map((project, id) => (
               <BlurFade
@@ -308,7 +309,7 @@ export default function Page() {
               </p>
             </div>
           </BlurFade>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto pt-4">
             {DATA.certifications.map((certification, id) => (
               <BlurFade
@@ -359,7 +360,7 @@ export default function Page() {
       {/* TIMELINES: WORK & EDUCATION (SIDE BY SIDE ON DESKTOP) */}
       <section id="experience-education" className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
-          
+
           {/* Work Experience */}
           <div className="space-y-6">
             <BlurFade delay={BLUR_FADE_DELAY * 10}>
@@ -372,7 +373,7 @@ export default function Page() {
                 </h2>
               </div>
             </BlurFade>
-            
+
             <div className="flex flex-col gap-y-4">
               {DATA.work.map((work, id) => (
                 <BlurFade
@@ -407,7 +408,7 @@ export default function Page() {
                 </h2>
               </div>
             </BlurFade>
-            
+
             <div className="flex flex-col gap-y-4">
               {DATA.education.map((education, id) => (
                 <BlurFade
@@ -439,10 +440,10 @@ export default function Page() {
             <div className="absolute top-0 right-0 p-4 text-[9px] font-mono text-neutral-400 dark:text-neutral-600 font-bold tracking-widest pointer-events-none select-none uppercase">
               &#47;&#47; COMM_LINK_INIT
             </div>
-            
+
             {/* Ambient inner glow for contact */}
             <div className="absolute -inset-10 bg-emerald-500/5 filter blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-[-1]" />
-            
+
             <div className="space-y-4 relative z-10">
               <div className="inline-block rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 px-3.5 py-1 text-xs font-mono tracking-widest uppercase">
                 CONTACTO_NODO
@@ -453,7 +454,7 @@ export default function Page() {
               <p className="mx-auto max-w-[550px] text-muted-foreground dark:text-neutral-400 text-sm sm:text-base leading-relaxed pt-1">
                 ¿Tienes alguna brecha de seguridad que deba auditarse o un desarrollo web innovador que quieras poner en marcha? Envíame un correo electrónico o un mensaje directo y me pondré en contacto lo antes posible.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 max-w-md mx-auto">
                 <Button asChild className="w-full sm:w-auto px-6 py-5 rounded-xl bg-primary text-primary-foreground hover:bg-primary/95 transition-all shadow-md font-mono text-xs tracking-wider flex items-center justify-center gap-2">
                   <Link href={`mailto:${DATA.contact.email}`} target="_blank">
@@ -466,7 +467,7 @@ export default function Page() {
                   </Link>
                 </Button>
               </div>
-              
+
               <div className="pt-4 flex justify-center items-center gap-2 sm:gap-4 flex-wrap text-xs font-mono text-muted-foreground select-none">
                 <span>TLF: +34 679 88 83 69</span>
                 <span className="hidden sm:inline">•</span>
