@@ -95,7 +95,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-16 sm:space-y-24 pb-20">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 sm:space-y-16 pb-20">
 
       {/* HERO SECTION — 3-column: portrait left | text center | terminal right */}
       <section id="hero" className="w-full pt-4">
