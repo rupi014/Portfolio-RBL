@@ -154,7 +154,7 @@ export const DATA = {
       logoUrl: "/linkia.png",
       start: "Feb 2026",
       end: "Actualidad",
-      description: "Durante el FP de Grado Superior en Ciberseguridad que estoy cursando actualmente, estoy adquiriendo conocimientos en administración de sistemas informáticos en red con especialización en seguridad. Estoy aprendiendo a detectar, prevenir y corregir incidentes de seguridad, además de desarrollar competencias en hacking ético, administración de redes, gestión de bases de datos y programación. También me estoy formando en análisis de ataques informáticos y protección de infraestructuras tecnológicas."
+      description: "Formación especializada en la administración, configuración y securización de sistemas y redes informáticas. El plan de estudios integra la prevención, detección y respuesta ante incidentes de seguridad, hacking ético, fortificación de infraestructuras, administración de sistemas operativos y bases de datos, con un enfoque práctico hacia la seguridad defensiva y el cumplimiento normativo."
     },
     {
       school: "BBK Bootcamp - Ciberseguridad",
