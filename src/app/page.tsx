@@ -19,11 +19,17 @@ const BLUR_FADE_DELAY = 0.03;
 function TerminalWidget() {
   return (
     <div className="w-full rounded-2xl bg-zinc-950/95 text-emerald-400 font-mono text-[11px] sm:text-xs border border-emerald-500/10 dark:border-emerald-500/20 shadow-[0_15px_40px_-15px_rgba(16,185,129,0.15)] dark:shadow-[0_15px_40px_-15px_rgba(0,0,0,0.6)] p-4 sm:p-5 overflow-hidden relative backdrop-blur-md">
-      <div className="flex items-center gap-1.5 pb-3 border-b border-white/5 mb-3">
-        <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-        <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-        <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
-        <span className="text-[10px] text-zinc-500 ml-2 select-none">rupi014@portfolio:~</span>
+      <div className="flex items-center justify-between pb-3 border-b border-white/5 mb-3">
+        <div className="flex items-center gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
+          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
+          <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
+          <span className="text-[10px] text-zinc-500 ml-2 select-none">rupi014@portfolio:~</span>
+        </div>
+        <div className="flex items-center gap-1.5 text-[9px] font-mono text-emerald-500/90 select-none bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded animate-pulse">
+          <span className="w-1 h-1 rounded-full bg-emerald-500" />
+          <span>PORTFOLIO RUBENS</span>
+        </div>
       </div>
       <div className="space-y-2 leading-relaxed">
         <p className="text-zinc-500 font-normal select-none">&#47;&#47; rubens-profile.sh</p>
@@ -47,23 +53,21 @@ function TerminalWidget() {
 
         <p className="flex items-center gap-1.5 mt-3">
           <span className="text-zinc-500">rupi014@portfolio:~$</span>
-          <span className="text-white">check-shields</span>
-        </p>
-        <p className="pl-3 text-emerald-400 flex items-center gap-2 select-none font-bold">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse shadow-[0_0_8px_#10b981]" />
-          <span>[SYSTEM ACTIVE & SECURED]</span>
-        </p>
-
-        <p className="flex items-center gap-1.5 mt-3">
-          <span className="text-zinc-500">rupi014@portfolio:~$</span>
           <span className="text-white">load --top-creds</span>
         </p>
-
         <p className="pl-3 text-emerald-400 font-bold items-center gap-1.5">➔ eWPT | eJPTv2 | ICCA | CEHPC</p>
 
         <p className="flex items-center gap-1.5 mt-3">
           <span className="text-zinc-500">rupi014@portfolio:~$</span>
-          <span className="text-white">_</span>
+          <span className="text-white">check-shields</span>
+        </p>
+        <p className="pl-3 text-emerald-400 flex items-center gap-2 select-none font-bold">
+          <span>➔ [SYSTEM ACTIVE & SECURED]</span>
+        </p>
+
+        <p className="flex items-center gap-1.5 mt-3">
+          <span className="text-zinc-500">rupi014@portfolio:~$</span>
+          <span className="text-white"></span>
           <span className="terminal-cursor" />
         </p>
       </div>
@@ -138,12 +142,6 @@ export default function Page() {
           {/* Col 2: Text Content */}
           <div className="space-y-4 order-2 text-center lg:text-left">
             <div className="space-y-2">
-              <BlurFade delay={BLUR_FADE_DELAY * 1.2}>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-[10px] font-mono tracking-widest select-none uppercase animate-pulse">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                  <span>NODO PRINCIPAL ACTIVO</span>
-                </div>
-              </BlurFade>
               <BlurFadeText
                 delay={BLUR_FADE_DELAY * 1.5}
                 className="text-3xl font-extrabold tracking-tighter sm:text-4xl lg:text-[25px] xl:text-[35px] 2xl:text-[42px] text-white leading-tight"
