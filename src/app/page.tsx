@@ -146,7 +146,7 @@ export default function Page() {
               </BlurFade>
               <BlurFadeText
                 delay={BLUR_FADE_DELAY * 1.5}
-                className="text-3xl font-extrabold tracking-tighter sm:text-4xl xl:text-5xl text-white leading-tight"
+                className="text-3xl font-extrabold tracking-tighter sm:text-4xl lg:text-[28px] xl:text-[40px] 2xl:text-5xl text-white leading-tight whitespace-nowrap"
                 yOffset={8}
                 text={`Hola, soy ${DATA.name.split(" ")[0]} 👋`}
               />
