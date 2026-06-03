@@ -53,17 +53,17 @@ export const DATA = {
     email: "rubens.bali@gmail.com",
     tel: "+34679888369",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/rupi014",
-        icon: Icons.github,
-
-        navbar: true,
-      },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://linkedin.com/in/rubensbl",
         icon: Icons.linkedin,
+
+        navbar: true,
+      },
+      GitHub: {
+        name: "GitHub",
+        url: "https://github.com/rupi014",
+        icon: Icons.github,
 
         navbar: true,
       },

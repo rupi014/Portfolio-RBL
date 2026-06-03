@@ -168,19 +168,19 @@ export default function Page() {
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-y-2 gap-x-4 justify-center lg:justify-start">
                 <Link
-                  href={`mailto:${DATA.contact.email}`}
-                  className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 hover:underline transition-colors"
-                >
-                  <Mail className="size-3.5" /> {DATA.contact.email}
-                </Link>
-                <span className="hidden sm:inline text-neutral-600">|</span>
-                <Link
                   href={DATA.contact.social.LinkedIn.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 hover:underline transition-colors"
                 >
                   <Linkedin className="size-3.5" /> linkedin.com/in/rubensbl
+                </Link>
+                <span className="hidden sm:inline text-neutral-600">|</span>
+                <Link
+                  href={`mailto:${DATA.contact.email}`}
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 hover:underline transition-colors"
+                >
+                  <Mail className="size-3.5" /> {DATA.contact.email}
                 </Link>
               </div>
             </BlurFade>
@@ -481,13 +481,13 @@ export default function Page() {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 max-w-md mx-auto">
                 <Button asChild className="w-full sm:w-auto px-6 py-5 rounded-xl bg-primary text-primary-foreground hover:bg-primary/95 transition-all shadow-md font-mono text-xs tracking-wider flex items-center justify-center gap-2">
-                  <Link href={`mailto:${DATA.contact.email}`} target="_blank">
-                    <Mail className="size-4" /> ENVIAR CORREO
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" className="w-full sm:w-auto px-6 py-5 rounded-xl border border-black/10 dark:border-emerald-500/20 bg-transparent text-foreground dark:text-emerald-400 hover:bg-emerald-500/5 transition-all font-mono text-xs tracking-wider flex items-center justify-center gap-2">
                   <Link href="https://linkedin.com/in/rubensbl" target="_blank">
                     <Linkedin className="size-4" /> LINKEDIN
+                  </Link>
+                </Button>
+                <Button asChild className="w-full sm:w-auto px-6 py-5 rounded-xl bg-primary text-primary-foreground hover:bg-primary/95 transition-all shadow-md font-mono text-xs tracking-wider flex items-center justify-center gap-2">
+                  <Link href={`mailto:${DATA.contact.email}`} target="_blank">
+                    <Mail className="size-4" /> ENVIAR CORREO
                   </Link>
                 </Button>
               </div>
