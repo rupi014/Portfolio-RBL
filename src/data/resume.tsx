@@ -8,18 +8,29 @@ export const DATA = {
   location: "Portugalete, Vizcaya",
   locationLink: "https://www.google.com/maps/place/Portugalete",
   description:
-    "Técnico junior en ciberseguridad, integro mi formación en Full Stack y mi experiencia en el sector de la salud para aportar una perspectiva única. Me especializo en pentesting y análisis de vulnerabilidades para entornos robustos.",
+    "Técnico en Ciberseguridad (eWPT & eJPTv2). Combino un sólido background en desarrollo Full Stack con una trayectoria previa en el sector de la salud para aportar un enfoque analítico, metódico y transversal al pentesting web y análisis de vulnerabilidades.",
   summary:
-    "Mi progresión profesional me ha conducido a la ciberseguridad, un área que me apasiona y a la que me gustaría dedicarme por completo. Comencé mi carrera como terapeuta ocupacional, donde adquirí habilidades de liderazgo y trabajo en equipo. Posteriormente, me adentré en el desarrollo Full Stack, construyendo soluciones web como una web personal y una para un equipo de eSports. Ahora, aplico este background único al pentesting y análisis de vulnerabilidades para proteger entornos digitales.",
+    "Mi pasión por la tecnología y la seguridad de la información me ha llevado a especializarme en ciberseguridad, donde actualmente compagino mi rol como Teacher Assistant en el bootcamp de ciberseguridad de BBK con mi formación en progreso en ASIR. Inicié mi trayectoria profesional en el sector de la salud, lo que me aportó valiosas competencias en liderazgo, gestión de equipos y resolución de problemas bajo presión. Posteriormente, me formé en desarrollo Full Stack, adquiriendo una base robusta para comprender el software desde dentro. Hoy en día, unifico este background técnico con certificaciones internacionales de referencia (eWPT, eJPTv2, ISO 27001 LA, CEHPC) para auditar, securizar y proteger entornos digitales de manera integral.",
   avatarUrl: "/me.jpg",
   skills: [
     "Kali Linux",
+    "Nmap",
     "Metasploit",
     "BurpSuite",
+    "OWASP ZAP",
     "Wireshark",
+    "SQLmap",
+    "Gobuster",
+    "Hashcat",
+    "Wazuh",
+    "ModSecurity",
+    "Splunk",
+    "Snort",
+    "YARA",
     "PE Studio",
     "ILSpy",
     "Ghidra",
+    "Autopsy",
     "HTML",
     "SCSS/SASS",
     "JavaScript",
@@ -95,7 +106,7 @@ export const DATA = {
       start: "Jun 2025",
       end: "Jun 2025",
       description:
-      "Lideré el equipo de Ciberseguridad en el Desafío de Tripulaciones de BBK Bootcamp. Este fue un programa intensivo de Terra que nos permitió, durante dos semanas, colaborar estrechamente con los equipos de Marketing Digital, Data Science y Desarrollo Full Stack. Mi función principal fue la de coordinar a cuatro miembros del equipo de Ciberseguridad, asignando responsabilidades y garantizando que el equipo estuviera siempre en sintonía. \n \n Realicé tareas de OSINT, auditoría de código con ESLint y SonarQube, y análisis de vulnerabilidades utilizando BurpSuite y Wireshark para identificar brechas de seguridad en sistemas y aplicaciones web. También investigué normativas aplicables para asegurar el cumplimiento legal y crear directrices de conformidad."
+        "Lideré el equipo de Ciberseguridad en el Desafío de Tripulaciones de BBK Bootcamp. Este fue un programa intensivo de Terra que nos permitió, durante dos semanas, colaborar estrechamente con los equipos de Marketing Digital, Data Science y Desarrollo Full Stack. Mi función principal fue la de coordinar a cuatro miembros del equipo de Ciberseguridad, asignando responsabilidades y garantizando que el equipo estuviera siempre en sintonía. \n \n Realicé tareas de OSINT, auditoría de código con ESLint y SonarQube, y análisis de vulnerabilidades utilizando BurpSuite y Wireshark para identificar brechas de seguridad en sistemas y aplicaciones web. También investigué normativas aplicables para asegurar el cumplimiento legal y crear directrices de conformidad."
     },
     {
       company: "Bottega University",
@@ -107,7 +118,7 @@ export const DATA = {
       start: "Sept 2024",
       end: "Oct 2024",
       description:
-      "Como parte de mi trabajo final de bootcamp en Bottega University, concebí y desarrollé de forma autónoma el sitio web oficial de un club de eSports. Este proyecto me permitió aplicar y consolidar mis conocimientos como desarrollador full stack, creando una plataforma completa y funcional. \n \n Tecnologías Utilizadas: \n - Front-End: React, JavaScript, SCSS \n - Back-End: Python (FastAPI), MySQL \n - Otros: EmailJS, HTML"
+        "Como parte de mi trabajo final de bootcamp en Bottega University, concebí y desarrollé de forma autónoma el sitio web oficial de un club de eSports. Este proyecto me permitió aplicar y consolidar mis conocimientos como desarrollador full stack, creando una plataforma completa y funcional. \n \n Tecnologías Utilizadas: \n - Front-End: React, JavaScript, SCSS \n - Back-End: Python (FastAPI), MySQL \n - Otros: EmailJS, HTML"
     },
     {
       company: "IFAS Bizkaia",
@@ -119,7 +130,7 @@ export const DATA = {
       start: "Feb 2023",
       end: "Jun 2024",
       description:
-      "Trabajé como terapeuta ocupacional en los centros de Gallarta, Virginetxe, Bekoetxe y Leioa de IFAS Bizkaia, adaptándome a diversos entornos y necesidades terapéuticas, y fortaleciendo mi capacidad de adaptación y trabajo en equipo."
+        "Trabajé como terapeuta ocupacional en los centros de Gallarta, Virginetxe, Bekoetxe y Leioa de IFAS Bizkaia, adaptándome a diversos entornos y necesidades terapéuticas, y fortaleciendo mi capacidad de adaptación y trabajo en equipo."
     },
 
     {
@@ -132,7 +143,7 @@ export const DATA = {
       start: "Feb 2018",
       end: "Oct 2022",
       description:
-      "Dirigí el Departamento de Terapia Ocupacional en AFA Salamanca, encargándome de la planificación y aplicación de programas terapéuticos. Colaboré en un entorno interdisciplinar con diversos profesionales, desarrollando sólidas habilidades blandas y capacidad de liderazgo."
+        "Dirigí el Departamento de Terapia Ocupacional en AFA Salamanca, encargándome de la planificación y aplicación de programas terapéuticos. Colaboré en un entorno interdisciplinar con diversos profesionales, desarrollando sólidas habilidades blandas y capacidad de liderazgo."
     }
   ],
   education: [
@@ -149,7 +160,7 @@ export const DATA = {
       school: "BBK Bootcamp - Ciberseguridad",
       href: "https://bbkbootcamps.thebridge.tech/ciberseguridad",
       degree: "Certificado Junior en Ciberseguridad",
-      logoUrl: "/bbk.png",
+      logoUrl: "/bridge.png",
       start: "Mar 2025",
       end: "Jun 2025",
       description: `Programa intensivo de ciberseguridad que cubre fundamentos de seguridad, análisis de vulnerabilidades, respuesta a incidentes y seguridad en la nube.
@@ -245,7 +256,7 @@ export const DATA = {
       logoUrl: "/google.png",
       date: "May 2025",
     },
-    
+
 
   ],
   projects: [

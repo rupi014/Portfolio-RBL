@@ -73,11 +73,11 @@ export default function Page() {
   const skillsCategories = [
     {
       title: "⚔️ RED TEAM / PENTESTING",
-      skills: ["Kali Linux", "Metasploit", "BurpSuite", "Wireshark"]
+      skills: ["Kali Linux", "Nmap", "Metasploit", "BurpSuite", "OWASP ZAP", "Wireshark", "SQLmap", "Gobuster", "Hashcat"]
     },
     {
-      title: "🛡️ BLUE TEAM / FORENSICS",
-      skills: ["PE Studio", "ILSpy", "Ghidra"]
+      title: "🛡️ BLUE TEAM / FORENSICS & DEFENSE",
+      skills: ["Wazuh", "ModSecurity", "Splunk", "Snort", "YARA", "PE Studio", "ILSpy", "Ghidra", "Autopsy"]
     },
     {
       title: "💻 FULL-STACK DEVELOPMENT",
