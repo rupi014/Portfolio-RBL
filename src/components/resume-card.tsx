@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React from "react";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -20,6 +20,8 @@ interface ResumeCardProps {
   description?: string;
   target?: string;
   rel?: string;
+  isExpanded?: boolean;
+  onToggle?: () => void;
 }
 export const ResumeCard = ({
   logoUrl,
@@ -32,23 +34,20 @@ export const ResumeCard = ({
   description,
   target,
   rel,
+  isExpanded: isExpandedProp,
+  onToggle,
 }: ResumeCardProps) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
-  const [height, setHeight] = React.useState(0);
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  React.useEffect(() => {
-    if (isExpanded && contentRef.current) {
-      setHeight(contentRef.current.scrollHeight);
-    } else {
-      setHeight(0);
-    }
-  }, [isExpanded, description]);
+  const [isExpandedLocal, setIsExpandedLocal] = React.useState(false);
+  const isExpanded = isExpandedProp !== undefined ? isExpandedProp : isExpandedLocal;
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
       e.preventDefault();
-      setIsExpanded(!isExpanded);
+      if (onToggle) {
+        onToggle();
+      } else {
+        setIsExpandedLocal(!isExpandedLocal);
+      }
     }
   };
 
@@ -77,10 +76,21 @@ export const ResumeCard = ({
         <div className="flex-grow ml-4 flex flex-col">
           <CardHeader className="p-0">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-y-1 gap-x-2 text-base">
-              <h3 className="inline-flex flex-wrap items-center gap-1.5 font-bold leading-none text-sm sm:text-base text-foreground dark:text-white dark:group-hover:text-emerald-400 transition-colors">
-                {title}
+              <h3 className="font-bold leading-tight text-sm sm:text-base text-foreground dark:text-white dark:group-hover:text-emerald-400 transition-colors">
+                {description && (
+                  <span
+                    className={cn(
+                      "inline-flex items-center align-middle mr-1.5 p-0.5 rounded-full hover:bg-black/5 dark:hover:bg-white/5 text-muted-foreground transition-transform duration-300",
+                      isExpanded ? "rotate-90 text-emerald-500 dark:text-emerald-400" : "group-hover:translate-x-0.5"
+                    )}
+                    title="Haz clic para ver más detalles"
+                  >
+                    <ChevronRightIcon className="size-4 inline-block" />
+                  </span>
+                )}
+                <span>{title}</span>
                 {badges && badges.length > 0 && (
-                  <span className="inline-flex gap-x-1">
+                  <span className="inline-flex gap-x-1 ml-1.5 align-middle">
                     {badges.map((badge, index) => (
                       <Badge
                         variant="secondary"
@@ -90,17 +100,6 @@ export const ResumeCard = ({
                         {badge}
                       </Badge>
                     ))}
-                  </span>
-                )}
-                {description && (
-                  <span
-                    className={cn(
-                      "ml-1 p-0.5 rounded-full hover:bg-black/5 dark:hover:bg-white/5 text-muted-foreground transition-transform duration-300",
-                      isExpanded ? "rotate-90 text-emerald-500 dark:text-emerald-400" : "group-hover:translate-x-0.5"
-                    )}
-                    title="Haz clic para ver más detalles"
-                  >
-                    <ChevronRightIcon className="size-4" />
                   </span>
                 )}
               </h3>
@@ -115,7 +114,7 @@ export const ResumeCard = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-                height: isExpanded ? height : 0,
+                height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.4,
@@ -124,11 +123,11 @@ export const ResumeCard = ({
               style={{ overflow: "hidden" }}
               className="text-xs sm:text-sm"
             >
-              <div ref={contentRef} className="pt-3 text-muted-foreground dark:text-neutral-300 font-sans leading-relaxed border-t border-black/[0.03] dark:border-white/[0.04] mt-3">
+              <div className="pt-3 text-muted-foreground dark:text-neutral-300 font-sans leading-relaxed border-t border-black/[0.03] dark:border-white/[0.04] mt-3">
                 {description.split("\n").map((line, idx) => (
                   <React.Fragment key={idx}>
                     {line}
-                    <br />
+                    {idx < description.split("\n").length - 1 && <br />}
                   </React.Fragment>
                 ))}
               </div>

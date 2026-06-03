@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -69,6 +72,8 @@ function TerminalWidget() {
 }
 
 export default function Page() {
+  const [activeExpandedId, setActiveExpandedId] = useState<string | null>(null);
+
   // Grouping skills for the Bento Grid section
   const skillsCategories = [
     {
@@ -375,24 +380,29 @@ export default function Page() {
             </BlurFade>
 
             <div className="flex flex-col gap-y-4">
-              {DATA.work.map((work, id) => (
-                <BlurFade
-                  key={work.company}
-                  delay={BLUR_FADE_DELAY * 11 + id * 0.05}
-                >
-                  <ResumeCard
+              {DATA.work.map((work, id) => {
+                const cardId = `work-${work.company}-${id}`;
+                return (
+                  <BlurFade
                     key={work.company}
-                    logoUrl={work.logoUrl}
-                    altText={work.company}
-                    title={work.company}
-                    subtitle={work.title}
-                    href={work.href}
-                    badges={work.badges}
-                    period={`${work.start} - ${work.end ?? "Actualidad"}`}
-                    description={work.description}
-                  />
-                </BlurFade>
-              ))}
+                    delay={BLUR_FADE_DELAY * 11 + id * 0.05}
+                  >
+                    <ResumeCard
+                      key={work.company}
+                      logoUrl={work.logoUrl}
+                      altText={work.company}
+                      title={work.company}
+                      subtitle={work.title}
+                      href={work.href}
+                      badges={work.badges}
+                      period={`${work.start} - ${work.end ?? "Actualidad"}`}
+                      description={work.description}
+                      isExpanded={activeExpandedId === cardId}
+                      onToggle={() => setActiveExpandedId(activeExpandedId === cardId ? null : cardId)}
+                    />
+                  </BlurFade>
+                );
+              })}
             </div>
           </div>
 
@@ -410,23 +420,28 @@ export default function Page() {
             </BlurFade>
 
             <div className="flex flex-col gap-y-4">
-              {DATA.education.map((education, id) => (
-                <BlurFade
-                  key={education.school}
-                  delay={BLUR_FADE_DELAY * 13 + id * 0.05}
-                >
-                  <ResumeCard
+              {DATA.education.map((education, id) => {
+                const cardId = `edu-${education.school}-${id}`;
+                return (
+                  <BlurFade
                     key={education.school}
-                    href={undefined}
-                    logoUrl={education.logoUrl}
-                    altText={education.school}
-                    title={education.school}
-                    subtitle={education.degree}
-                    period={`${education.start} - ${education.end}`}
-                    description={education.description}
-                  />
-                </BlurFade>
-              ))}
+                    delay={BLUR_FADE_DELAY * 13 + id * 0.05}
+                  >
+                    <ResumeCard
+                      key={education.school}
+                      href={undefined}
+                      logoUrl={education.logoUrl}
+                      altText={education.school}
+                      title={education.school}
+                      subtitle={education.degree}
+                      period={`${education.start} - ${education.end}`}
+                      description={education.description}
+                      isExpanded={activeExpandedId === cardId}
+                      onToggle={() => setActiveExpandedId(activeExpandedId === cardId ? null : cardId)}
+                    />
+                  </BlurFade>
+                );
+              })}
             </div>
           </div>
 
