@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { ShieldCheck, Server, Terminal, GraduationCap, Briefcase, Award, Mail, Phone, ExternalLink } from "lucide-react";
+import { ShieldCheck, Server, Terminal, GraduationCap, Briefcase, Award, Mail, Phone, ExternalLink, Linkedin } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.03;
 
@@ -168,12 +168,23 @@ export default function Page() {
                 <ShieldCheck className="size-3.5 text-emerald-500 flex-none" />
                 <span className="text-xs font-mono text-neutral-300 font-semibold tracking-wide">eWPT · eJPTv2 · ICCA · CEHPC</span>
               </div>
-              <Link
-                href={`mailto:${DATA.contact.email}`}
-                className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 hover:underline transition-colors w-fit mx-auto lg:mx-0"
-              >
-                <Mail className="size-3.5" /> rubens.bali@gmail.com
-              </Link>
+              <div className="flex flex-col sm:flex-row items-center gap-y-2 gap-x-4 justify-center lg:justify-start">
+                <Link
+                  href={`mailto:${DATA.contact.email}`}
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 hover:underline transition-colors"
+                >
+                  <Mail className="size-3.5" /> {DATA.contact.email}
+                </Link>
+                <span className="hidden sm:inline text-neutral-600">|</span>
+                <Link
+                  href={DATA.contact.social.LinkedIn.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 hover:underline transition-colors"
+                >
+                  <Linkedin className="size-3.5" /> linkedin.com/in/rubensbl
+                </Link>
+              </div>
             </BlurFade>
           </div>
 
@@ -478,7 +489,7 @@ export default function Page() {
                 </Button>
                 <Button asChild variant="outline" className="w-full sm:w-auto px-6 py-5 rounded-xl border border-black/10 dark:border-emerald-500/20 bg-transparent text-foreground dark:text-emerald-400 hover:bg-emerald-500/5 transition-all font-mono text-xs tracking-wider flex items-center justify-center gap-2">
                   <Link href="https://linkedin.com/in/rubensbl" target="_blank">
-                    <ExternalLink className="size-4" /> LINKEDIN
+                    <Linkedin className="size-4" /> LINKEDIN
                   </Link>
                 </Button>
               </div>
