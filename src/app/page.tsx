@@ -56,7 +56,11 @@ function TerminalWidget() {
           <span className="text-white">load --top-creds</span>
         </p>
 
-        <p className="pl-3 text-emerald-400 font-bold items-center gap-1.5">➔ eWPT | eJPTv2 | ICCA | CEHPC</p>
+        <p className="pl-3 text-emerald-400 font-bold items-center gap-1.5">
+          ➔ eWPT | eJPTv2 | ICCA | CEHPC 
+          <br />
+          | ISO/IEC 27001:2022 LA
+        </p>
 
         <p className="flex items-center gap-1.5 mt-3">
           <span className="text-zinc-500">rupi014@portfolio:~$</span>
@@ -161,8 +165,8 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY * 3} className="flex flex-col gap-2 pt-1">
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <ShieldCheck className="size-3.5 text-emerald-500 flex-none" />
-                <span className="text-xs font-mono text-neutral-300 font-semibold tracking-wide">eWPT · eJPTv2 · ICCA · CEHPC</span>
-              </div>
+                <span className="text-xs font-mono text-neutral-300 font-semibold tracking-wide">eWPT · eJPTv2 · ICCA · CEHPC · ISO/IEC 27001:2022 LA</span>
+              </div> 
               <Link
                 href={`mailto:${DATA.contact.email}`}
                 className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 hover:underline transition-colors w-fit mx-auto lg:mx-0"
