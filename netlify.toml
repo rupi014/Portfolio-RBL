@@ -1,4 +1,5 @@
 [build.environment]
   PYTHON_VERSION = "3.8.20"
   NODE_VERSION = "22"
+  MISE_PYTHON_GITHUB_ATTESTATIONS = "false"
 
