@@ -76,26 +76,12 @@ export const ResumeCard = ({
         </div>
         <div className="flex-grow ml-4 flex flex-col">
           <CardHeader className="p-0">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-y-1 gap-x-2 text-base">
-              <h3 className="inline-flex flex-wrap items-center gap-1.5 font-bold leading-none text-sm sm:text-base text-foreground dark:text-white dark:group-hover:text-emerald-400 transition-colors">
-                {title}
-                {badges && badges.length > 0 && (
-                  <span className="inline-flex gap-x-1">
-                    {badges.map((badge, index) => (
-                      <Badge
-                        variant="secondary"
-                        className="align-middle text-[9px] font-mono font-normal tracking-tight px-1.5 py-0 bg-emerald-500/5 text-emerald-700 dark:text-emerald-400 border border-emerald-500/10"
-                        key={index}
-                      >
-                        {badge}
-                      </Badge>
-                    ))}
-                  </span>
-                )}
+            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-y-1 gap-x-2 text-base">
+              <h3 className="flex items-start gap-1.5 min-w-0 font-bold leading-snug text-sm sm:text-base text-foreground dark:text-white dark:group-hover:text-emerald-400 transition-colors">
                 {description && (
                   <span
                     className={cn(
-                      "ml-1 p-0.5 rounded-full hover:bg-black/5 dark:hover:bg-white/5 text-muted-foreground transition-transform duration-300",
+                      "flex-none mt-0.5 p-0.5 rounded-full hover:bg-black/5 dark:hover:bg-white/5 text-muted-foreground transition-transform duration-300",
                       isExpanded ? "rotate-90 text-emerald-500 dark:text-emerald-400" : "group-hover:translate-x-0.5"
                     )}
                     title="Haz clic para ver más detalles"
@@ -103,8 +89,24 @@ export const ResumeCard = ({
                     <ChevronRightIcon className="size-4" />
                   </span>
                 )}
+                <span className="min-w-0">
+                  {title}
+                  {badges && badges.length > 0 && (
+                    <span className="inline-flex gap-x-1 ml-1.5 align-middle">
+                      {badges.map((badge, index) => (
+                        <Badge
+                          variant="secondary"
+                          className="align-middle text-[9px] font-mono font-normal tracking-tight px-1.5 py-0 bg-emerald-500/5 text-emerald-700 dark:text-emerald-400 border border-emerald-500/10"
+                          key={index}
+                        >
+                          {badge}
+                        </Badge>
+                      ))}
+                    </span>
+                  )}
+                </span>
               </h3>
-              <div className="text-xs font-mono text-muted-foreground sm:text-right">
+              <div className="text-xs font-mono text-muted-foreground sm:text-right flex-none whitespace-nowrap sm:pt-0.5">
                 {period}
               </div>
             </div>

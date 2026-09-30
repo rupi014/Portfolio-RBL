@@ -21,6 +21,10 @@ function TerminalWidget() {
         <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
         <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
         <span className="text-[10px] text-zinc-500 ml-2 select-none">rupi014@portfolio:~</span>
+        <div className="ml-auto inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-[9px] font-mono tracking-widest uppercase animate-pulse select-none">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+          <span>portfolio rubens</span>
+        </div>
       </div>
       <div className="space-y-2 leading-relaxed">
         <p className="text-zinc-500 font-normal select-none">&#47;&#47; rubens-profile.sh</p>
@@ -137,15 +141,9 @@ export default function Page() {
           {/* Col 2: Text Content */}
           <div className="space-y-4 order-2 text-center lg:text-left">
             <div className="space-y-2">
-              <BlurFade delay={BLUR_FADE_DELAY * 1.2}>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-[10px] font-mono tracking-widest select-none uppercase animate-pulse">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                  <span>NODO PRINCIPAL ACTIVO</span>
-                </div>
-              </BlurFade>
               <BlurFadeText
                 delay={BLUR_FADE_DELAY * 1.5}
-                className="text-3xl font-extrabold tracking-tighter sm:text-4xl xl:text-5xl text-white leading-tight"
+                className="text-2xl font-extrabold tracking-tighter sm:text-3xl xl:text-4xl text-white leading-tight whitespace-nowrap"
                 yOffset={8}
                 text={`Hola, soy ${DATA.name.split(" ")[0]} 👋`}
               />
